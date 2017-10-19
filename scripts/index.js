@@ -1,13 +1,12 @@
 var io = new IntersectionObserver(
 	entries => {
-		const target = entries[0].target.parentElement(
-			Array.from(document.querySelectorAll('.topMenu a')).forEach(menuEl => {
-				menuEl.parentElement.classList.toggle(
-					'active',
-					menuEl.getAttribute('href') == '#' + target.id
-				)
-			})
-		)
+		const target = entries[0].target.parentElement
+		Array.from(document.querySelectorAll('.topMenu a')).forEach(menuEl => {
+			menuEl.parentElement.classList.toggle(
+				'active',
+				menuEl.getAttribute('href') == '#' + target.id
+			)
+		})
 	},
 	{
 		rootMargin: '0px 0px 50%',
