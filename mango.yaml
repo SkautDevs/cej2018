@@ -1,0 +1,10 @@
+src: .
+dist: dist
+images:
+  -
+    src: photos/*.{jpg,JPG}
+    sizes:
+      - 400
+      - 800
+      - 1200
+      - 2400

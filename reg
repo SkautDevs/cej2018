@@ -1,0 +1,2 @@
+src="photos/([^"]+).(jpg|JPG)"
+src="photos/$1.$2" srcset="photos/$1-400.$2 400w, photos/$1-800.$2 800w, photos/$1-1200.$2 1200w, photos/$1-2400.$2 1200w"
