@@ -429,6 +429,6 @@ img.narrowPhoto {
 }
 
 .active {
-	background: rebeccapurple;
+	background: black;
 	border-radius: 5px;
 }
