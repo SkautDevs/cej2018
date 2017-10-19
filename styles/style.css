@@ -101,12 +101,14 @@ nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 	padding: 0; /* cause normalize... */
 }
 
 nav li {
 	flex-direction: row;
 	margin: 0 5px;
+	padding: 4px 8px;
 }
 
 nav li a {
@@ -433,4 +435,9 @@ img.narrowPhoto {
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.active {
+	background: black;
+	border-radius: 5px;
 }
