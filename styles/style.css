@@ -150,8 +150,9 @@ div.content {
 	position: relative;
 	overflow-y: auto;
 
-	/* so far Firefox only */
 	scroll-behavior: smooth;
+	display: flex;
+	flex-direction: column;
 }
 
 .scrollblock {
@@ -335,9 +336,6 @@ img.narrowPhoto {
 	height: 200px;
 	width: 100%;
 	border-radius: 0;
-
-	/* wtf hack */
-	margin-bottom: -10px;
 }
 
 /* for sure.. */
