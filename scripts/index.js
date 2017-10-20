@@ -1,19 +1,21 @@
-var io = new IntersectionObserver(
-	entries => {
-		const target = entries[0].target.parentElement
-		Array.from(document.querySelectorAll('.topMenu a')).forEach(menuEl => {
-			menuEl.parentElement.classList.toggle(
-				'active',
-				menuEl.getAttribute('href') == '#' + target.id
-			)
-		})
+function hightlightMenuItem() {
+	const el = Array.from(document.querySelectorAll('.scrollblock[id]')).find(
+		el => el.getBoundingClientRect().bottom > window.innerHeight * 0.5
+	)
+	Array.from(document.querySelectorAll('.topMenu a')).forEach(menuEl => {
+		menuEl.parentElement.classList.toggle(
+			'active',
+			menuEl.getAttribute('href') == '#' + el.id
+		)
+	})
+}
+
+document.addEventListener(
+	'scroll',
+	() => {
+		hightlightMenuItem()
 	},
-	{
-		rootMargin: '0px 0px 50%',
-		threshold: [0.1]
-	}
+	{ passive: true }
 )
-// Start observing an element
-Array.from(document.querySelectorAll('.scrollblock h2')).forEach(el => {
-	io.observe(el)
-})
+
+hightlightMenuItem()
