@@ -81,9 +81,9 @@ a.button {
 code {
 	background-color: #000;
 	font-style: normal;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	color: white;
-	padding: 5px 15px;
+	padding: 10px 16px;
 }
 
 /* menu */
@@ -122,13 +122,8 @@ nav ul li {
 
 /* images */
 
-img {
-	border-radius: 10px;
-}
-
 img.logo {
 	width: 300px;
-	/* margin-bottom: 40px; */
 }
 
 /* team */
@@ -148,6 +143,7 @@ div.memberProfile {
 
 img.faceImage {
 	width: 200px;
+	border-radius: 10px;
 }
 
 /* content */
