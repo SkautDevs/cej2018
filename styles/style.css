@@ -81,7 +81,6 @@ a.button {
 code {
 	background-color: #000;
 	font-style: normal;
-	/* border-radius: 10px; */
 	color: white;
 	padding: 10px 16px;
 }
@@ -102,7 +101,7 @@ nav {
 }
 
 nav ul {
-	max-width: 960px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 
@@ -152,12 +151,12 @@ div.content {
 	flex: 1 1 auto;
 	position: relative;
 	overflow-y: auto;
+	margin-top: 80px;
 
 	/* so far Firefox only */
 	scroll-behavior: smooth;
 	display: flex;
 	flex-direction: column;
-	margin-top: 81px;
 }
 
 .scrollblock {
@@ -165,8 +164,8 @@ div.content {
 	margin: 0;
 	width: 100%;
 	color: white;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 100px;
+	padding-bottom: 60px;
 }
 
 div.landing {
@@ -295,6 +294,7 @@ div.contact h2 {
 div.contact h3 {
 	color: #732813;
 }
+
 div.contact p {
 	color: #732813;
 }
@@ -319,6 +319,25 @@ div.team h3 {
 
 div.team h4 {
 	color: #8D5F0F;
+}
+
+div.cejnews {
+	background-color: #A4D2B2;
+}
+
+div.cejnews h2 {
+	color: #2b6513;
+	text-decoration-color: #2b6513;
+}
+
+div.cejnews h3 {
+	color: #2b6513;
+	text-decoration-color: #2b6513;
+}
+
+div.cejnews h4 {
+	color: #657F6F;
+	text-decoration-color: #657F6F;
 }
 
 div.footer {
