@@ -157,7 +157,7 @@ div.cejNewsImages {
 }
 
 div.oneCejNew {
-	margin: 40px 0;
+
 }
 
 img.oneCejNewsImage {
@@ -301,6 +301,11 @@ div.registration h3 {
 
 div.registration p {
 	color: #732813;
+}
+
+div.registration code {
+	color: white;
+	background-color: #732813;
 }
 
 div.contact {
