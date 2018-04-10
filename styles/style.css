@@ -203,6 +203,10 @@ div.landing h3 {
 	color: #000;
 }
 
+div.landing code {
+	background-color: #211E66;
+}
+
 div.cej2018 {
 	background-color: #007BC2;
 }
